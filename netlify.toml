@@ -1,5 +1,5 @@
 [build]
-  command = "npm install && CI=false npm run build"
+  command = "mkdir -p public && echo '<!DOCTYPE html><html><head><meta charset=\"utf-8\"/><title>Filmes Web</title></head><body><div id=\"root\"></div></body></html>' > public/index.html && npm install && CI=false npm run build"
   publish = "build"
 
 [[redirects]]
